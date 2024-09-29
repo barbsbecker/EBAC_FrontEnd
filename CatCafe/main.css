@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    background-color: #7C4526;
+}
+  
+
+header,
+section h2 ,
+form button{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+section h3 {
+    font-family: "Bungee", system-ui;
+    font-weight: normal;
+}
+
+body {
+    background-image: url('./images/background.webp');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-color: #343e47d0;
+    background-blend-mode: overlay;
+  }
+
+body, input, textarea {
+    font-family: "Open Sans", system-ui;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #7C4526;
+    color: #fff;
+}
+
+header nav li a{
+    color: #d2d2d2;
+    text-decoration: none;
+    transition: font-size 0.4s ease;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 16px;
+    font-size: 16px;
+}
+
+header nav li a:hover {
+    font-size: 18px;
+    color: #fff;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.container img {
+    border-radius: 8px;
+}
+
+.ongs-list li img {
+    border-radius: 8px;
+    width: 75px;
+    height: 70px;
+}
+
+header .container,
+section .container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ongs-list img {
+     height: 24px;
+     margin-right: 8px;
+}
+
+.ongs-listc {
+    height: 24px;
+    margin-right: 8px;
+}
+.ongs-list li {
+    display: inline;
+}
+
+.logoloja {
+    height: 550px;
+    width: 550px;
+    margin-right: 32px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+    color: #fff;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.social-link img {
+    height: 35px;
+    margin-right: 6px;
+}
+
+.social-link li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-link li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form  input,
+form textarea,
+form button
+{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section .container h3 {
+    margin-bottom: 16px;
+}
+
+form button {
+    background-color: #343E47;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6E645B;
+}
+
+input:focus, textarea:focus {
+    outline-color: #343E47;
+}
+
+footer {
+    background-color: #7C4526;
+    color: #fff;
+    padding: 16px 0;
+}
+
+#cardapio .container {
+    display: block; /
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 16px; 
+    text-align: center;
+}
+
+.articles article {
+    width: 30%;
+    margin-bottom: 16px; 
+}
+
+.articles article img {
+    width: 100%; 
+    height: 50%; 
+    border-radius: 50%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    transition: transform 0.3s ease;
+}
+
+.contact-methods #logotime {
+    height: 150px;
+    border-radius: 30%;
+    margin-bottom: 8px;
+}
+
+.articles article img:hover {
+    transform: scale(1.1); 
+}
