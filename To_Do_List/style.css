@@ -1,0 +1,125 @@
+* 
+{
+    margin: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    background-color: #f7f5ec;
+ 
+ }
+ 
+ h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #cf820f;
+  }
+
+  label  {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 1rem;
+    color: #da9604;
+}
+
+    
+    
+ 
+ .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    /*background-color: aqua;*/
+    margin: 2% auto;
+    padding: 0 auto;
+    max-width: 680px;
+    width: 100%;
+ }
+ 
+ header {
+    font-family: "Kiwi Maru", serif;
+    text-align: center;
+    /*background-color: rgb(245, 188, 113);*/
+    padding:32px;
+    
+ }
+ 
+ label {
+    font-size: 1rem;
+    font-family: "Kiwi Maru", serif;
+ }
+ 
+ .container-input{
+     /*background-color: blue;*/
+    margin-top: 3rem;
+    padding: 1rem 1rem 1rem 0;
+ }
+ 
+ .input-div{ 
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin: 8px 0 8px 0;
+    height: 40px;
+  }
+ 
+  .input-div input {
+    flex-grow: 1;
+    height: 100%;
+    padding: 12px;
+    background-color: #F4EEEE;
+    color: #7A7A7A;
+    border: 1px solid #d8d7d7;
+    outline: none; 
+    border-radius: 0.5rem;
+    font-size: 12px;
+ }
+ 
+ .input-div button {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #ad0d50;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+ }
+ 
+ 
+ .atividades-items {
+    font-size: 14px;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    border-bottom: 1.2px solid #404040;
+    padding: 8px;
+ }
+ 
+ 
+  .input-div input:focus {
+    flex-grow: 1;
+    height: 100%;
+    padding: 12px;
+    background-color: #F4EEEE;
+    color: #7A7A7A;
+    border: 1.2px solid #d8d7d7;
+    border-radius: 0.5rem;
+    font-size: 12px;
+    border-color: #cf0b7d; /* Muda a cor da borda ao focar */
+ }
+ 
+ .riscado {
+    text-decoration: line-through; 
+    color: #838383; /
+ }
+ 
+ 
+ .input-div button:hover {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #9b0745;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+ }
