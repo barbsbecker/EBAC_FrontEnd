@@ -104,7 +104,7 @@
     border: 1.2px solid #d8d7d7;
     border-radius: 0.5rem;
     font-size: 12px;
-    border-color: #cf0b7d; /* Muda a cor da borda ao focar */
+    border-color: #cf0b7d;
  }
  
  .riscado {
