@@ -1,44 +1,19 @@
-const form = document.getElementById('form-deposito');
-const nomeBeneficiario = document.getElementById('nome-beneficiario');
-let formEValido = false;
+const formulario = document.getElementById('meuFormulario');
+const mensagem = document.getElementById('mensagem');
 
-function validarNome(nomeCompleto) {
-    const nomeComoArray = nomeCompleto.split(' ');
-    return nomeComoArray.length >= 2;
-}
+formulario.addEventListener('submit', function(event) {
+  event.preventDefault();
 
-form.addEventListener('submit', function(e){
-    e.preventDefault();
+  const campoA = parseFloat(document.getElementById('campoA').value);
+  const campoB = parseFloat(document.getElementById('campoB').value);
 
-    const numeroContaBeneficiario = document.getElementById('numero-conta');
-    const valorDeposito = document.getElementById('valor-deposito');
-    const mensagemSucesso = `
-        Montante de: <b>R$ ${valorDeposito.value}</b> depositado para o cliente: <b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>
-    `
-    
-    formEValido = validarNome(nomeBeneficiario.value)
-    if(formEValido) {
-        const containerMensagemSucesso = document.querySelector('.success-message');
-        containerMensagemSucesso.innerHTML = mensagemSucesso;
-        containerMensagemSucesso.style.display = 'block';
-
-        nomeBeneficiario.value = '';
-        numeroContaBeneficiario.value = '';
-        valorDeposito.value = '';      
-    } else {
-        nomeBeneficiario.style.border = '1px solid red'
-        document.querySelector('.error-message').style.display = 'block';
-    }
-});
-
-nomeBeneficiario.addEventListener('change', function(e){
-    formEValido = validarNome(e.target.value)
-
-    if(!formEValido) {
-        nomeBeneficiario.classList.add('error');
-        document.querySelector('.error-message').style.display = 'block';
-    } else {
-        nomeBeneficiario.classList.remove('error');
-        document.querySelector('.error-message').style.display = 'none';
-    }
+  if (campoB > campoA) {
+    mensagem.textContent = '✅ Sucesso! Campo B é maior que Campo A.';
+    mensagem.className = 'mensagem positiva';
+    mensagem.style.display = 'block';
+  } else {
+    mensagem.textContent = '❌ Erro: Campo B deve ser maior que Campo A.';
+    mensagem.className = 'mensagem negativa';
+    mensagem.style.display = 'block';
+  }
 });
