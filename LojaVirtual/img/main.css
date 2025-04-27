@@ -37,7 +37,7 @@ header {
 }
 
 #logo {
-    position: absolute; /* Fixa o logo no cabeçalho */;
+    position: absolute; /* Fixa o logo no cabeçalho */
     top: 20px;
     left: 20px;
     width: 10vw;
@@ -95,29 +95,28 @@ h1 {
 }
 
 #about, #products {
-        text-align: center; /* Centraliza o conteúdo dentro da seção */
-        font-size: 1.2rem; /* Aumenta o tamanho da fonte */
-        line-height: 1.6; /* Melhora a legibilidade aumentando o espaçamento entre linhas */
-        margin: 2rem auto; /* Adiciona margem para separar a seção das outras */
-        padding: 2rem; /* Espaçamento interno */
-        width: 80%; /* Controla a largura da seção */
-    }
-    
-    #about h2 {
-        font-size: 2.5rem; /* Aumenta o tamanho do título */
-        margin-bottom: 1rem; /* Espaço abaixo do título */
-        color: #333; /* Cor do título */
-    }
-    
-    #about p {
-        font-size: 1.2rem; /* Aumenta o tamanho da fonte do parágrafo */
-        color: #290c0c; /* Cor do texto */
-        margin-bottom: 1.5rem; /* Espaço abaixo do parágrafo */
-        max-width: 800px; /* Limita a largura do texto */
-        margin-left: auto; /* Centraliza a seção no eixo horizontal */
-        margin-right: auto; /* Centraliza a seção no eixo horizontal */
-    }
+    text-align: center; /* Centraliza o conteúdo dentro da seção */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    line-height: 1.6; /* Melhora a legibilidade aumentando o espaçamento entre linhas */
+    margin: 2rem auto; /* Adiciona margem para separar a seção das outras */
+    padding: 2rem; /* Espaçamento interno */
+    width: 80%; /* Controla a largura da seção */
+}
 
+#about h2 {
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: #333; /* Cor do título */
+}
+
+#about p {
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte do parágrafo */
+    color: #290c0c; /* Cor do texto */
+    margin-bottom: 1.5rem; /* Espaço abaixo do parágrafo */
+    max-width: 800px; /* Limita a largura do texto */
+    margin-left: auto; /* Centraliza a seção no eixo horizontal */
+    margin-right: auto; /* Centraliza a seção no eixo horizontal */
+}
 
 #about h2, #products h2 {
     font-size: 2rem;
@@ -165,6 +164,22 @@ h1 {
     color: #fff;
     padding: 1rem;
     border-radius: 0 0 8px 8px;
+}
+
+.add-to-cart {
+    background-color: #4b1717;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #a51c1c; /* Cor mais escura quando o botão é pressionado */
 }
 
 footer {
